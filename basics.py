@@ -128,12 +128,13 @@
 # print(find_min_odd_number([100, 50, 90, 101, 25, 19, 27, 18, 55]))
 
 
-def find_max_even_number(li):
-    even_list = []
-    for item in li:
-        if item % 2 == 0:
-            even_list.append(item)
-    return max(even_list)
+# def find_max_even_number(li):
+#     even_list = []
+#     for item in li:
+#         if item % 2 == 0:
+#             even_list.append(item)
+#     return max(even_list)
 
 
-print(find_max_even_number([3, 7, 22, 35, 37, 99, 101, 102, 96, 206, 301]))
+# print(find_max_even_number([3, 7, 22, 35, 37, 99, 101, 102, 96, 206, 301]))
+# print(type(True))
