@@ -66,32 +66,49 @@ their_list = [15, 16, 17, 18, 19, 20, 21]
 
 # List comprehensions
 # Strings
-my_list = [char for char in 'Python programming']
-# Numbers
-my_list2 = [num for num in range(0, 100)]
-# List of number multiplied by 2
-my_list3 = [num*2 for num in range(0, 100)]
-# List of even powered numbers from 0 to 100
-my_list4 = [num**2 for num in range(0, 100) if num % 2 == 0]
+# my_list = [char for char in 'Python programming']
+# # Numbers
+# my_list2 = [num for num in range(0, 100)]
+# # List of number multiplied by 2
+# my_list3 = [num*2 for num in range(0, 100)]
+# # List of even powered numbers from 0 to 100
+# my_list4 = [num**2 for num in range(0, 100) if num % 2 == 0]
 
-# Set comprehensions
-my_set = {char for char in 'Python programming'}
-my_set2 = {num for num in range(0, 100)}
-my_set3 = {num*2 for num in range(0, 100)}
-my_set4 = {num**2 for num in range(0, 100) if num % 2 == 0}
+# # Set comprehensions
+# my_set = {char for char in 'Python programming'}
+# my_set2 = {num for num in range(0, 100)}
+# my_set3 = {num*2 for num in range(0, 100)}
+# my_set4 = {num**2 for num in range(0, 100) if num % 2 == 0}
 
-# Dictionary comprehensions
-my_dict = {
-    'a': 1,
-    'b': 2,
-    'c': 3
-}
+# # Dictionary comprehensions
+# my_dict = {
+#     'a': 1,
+#     'b': 2,
+#     'c': 3
+# }
 
-my_dict2 = {x: x*2 for x in [1, 2, 3, 4, 5]}
-print(my_dict2)
+# my_dict2 = {x: x*2 for x in [1, 2, 3, 4, 5]}
+# print(my_dict2)
 
-my_dict3 = {k: v*2 for k, v in my_dict.items()}
-print(my_dict3)
+# my_dict3 = {k: v*2 for k, v in my_dict.items()}
+# print(my_dict3)
 
-my_dict4 = {k: v*2 for k, v in my_dict.items() if v > 1}
-print(my_dict4)
+# my_dict4 = {k: v*2 for k, v in my_dict.items() if v > 1}
+# print(my_dict4)
+
+# Finding duplicates in a list
+my_list = [1, 2, 3, 2, 1, 10, 11, 100, 10]
+# duplicates = []
+# for value in my_list:
+#     if my_list.count(value) > 1:
+#         if value not in duplicates:
+#             duplicates.append(value)
+
+# print(duplicates)
+# print(my_list)
+
+# Finding duplicates in a list by using list comprehensions
+duplicates = list(
+    set([value for value in my_list if my_list.count(value) > 1]))
+print(duplicates)
+print(my_list)
